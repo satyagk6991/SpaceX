@@ -28,7 +28,7 @@ const Home = () => {
     url = launchVal ? url + '&launch_success=' + launchVal : url;
     url = landingVal ? url + '&land_success=' + landingVal : url;
     url = year ? url + '&launch_year=' + year : url;
-    console.log('deqdwqdwqdwq', url);
+    console.log('API URL', url);
     try {
       fetch(url)
         .then(response => response.json())
@@ -127,8 +127,8 @@ const Home = () => {
         swipeDirection="right"
         animationIn="slideInRight"
         animationOut={'slideOutRight'}
-        animationInTiming={800}
-        animationOutTiming={800}>
+        animationInTiming={600}
+        animationOutTiming={600}>
         <View
           style={{
             marginLeft: 40,

@@ -14,7 +14,7 @@ const CustomRadioBtn = ({text, onPress, selectedVal}) => {
         onPress={onPress}
         style={[
           styles.customButton,
-          {backgroundColor: selectedVal == text ? '#ff6666' : '#99ff99'},
+          {backgroundColor: selectedVal == text ? '#29a329' : '#ccffcc'},
         ]}>
         <Text style={styles.btnText}>{text}</Text>
       </TouchableOpacity>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   customButton: {
     width: width * 0.3,
     height: height * 0.05,
-    backgroundColor: '#99ff99',
+    backgroundColor: '#ccffcc',
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 15,
